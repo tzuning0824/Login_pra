@@ -1,0 +1,146 @@
+/* 基本設定 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #a9c8e8 0%, #a9c8e8 100%); /* 單一漸層背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* 讓文字居中 */
+  flex-direction: column;
+}
+
+/* 上方 Banner */
+.top-banner {
+  width: 100%;
+  background: #70b3e1;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.top-banner h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* 表單卡片 */
+.form-container {
+  background-color: white;
+  width: 400px;
+  padding: 36px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-top: 270px; /* 調整距離，使表單不會被 Banner 擋住 */
+}
+
+/* 表單排版 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 單個欄位 */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 標籤 */
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 輸入框 */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* 單選按鈕 */
+.gender-options {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+/* 多選框群組 */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+}
+/* Banner 內部排版 */
+.banner-content {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 導覽連結 */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+/* 滑過時有變色 */
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 目前頁面的感覺 */
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* 送出按鈕 */
+.submit-btn {
+  background-color: #6fa6e6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #4a8cb5;
+}
